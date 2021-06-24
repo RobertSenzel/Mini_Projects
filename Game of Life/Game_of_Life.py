@@ -1,5 +1,4 @@
 import sys
-# import time
 import numpy as np
 import pygame as pg
 import gol_patterns as gp
@@ -119,20 +118,6 @@ if __name__ == '__main__':
                     if event.button == 2:
                         draw_pattern = False
                 if event.type == pg.KEYDOWN:
-                    if event.key == pg.K_d:
-                        draw_pattern = True
-                        wd = int(input('width: '))
-                        hd = int(input('height: '))
-                        draw_data = wd, hd
-                        pixels[int(width/2-1):int(width/2+1)+wd, int(height/2-1)] = 1
-                        pixels[int(width / 2 - 1):int(width / 2 + 1) + wd, int(height / 2) + hd] = 1
-                        pixels[int(width / 2 - 1), int(height / 2 - 1): int(height / 2 + 1) + hd] = 1
-                        pixels[int(width / 2)+wd, int(height / 2 - 1): int(height / 2 + 1) + hd] = 1
-                    if event.key == pg.K_f:
-                        draw_pattern = False
-                        a1, a2 = draw_data
-                        pattern_save = pixels[int(width/2):int(width/2)+a1, int(height/2):int(height/2)+a2]
-                        np.save('space',  pattern_save)
                     if event.key == pg.K_r:
                         Screen.fill((0, 0, 0))
                         pre_step = np.zeros((width, height), dtype=int)
