@@ -114,7 +114,7 @@ def zoom_draw():
 
 
 def iteration():
-    """updates the cells every iteration using Conway's game of life rules.
+    """updates cells every iteration using Conway's game of life rules.
        Divides the main grid into 16384 smaller grids, only updates grids with life in it"""
     global pixels
 
@@ -158,7 +158,7 @@ def coordinate_change(mouse):
 
 
 def print_text(text, coords):
-    """print test to screen"""
+    """print text to screen"""
     tool_text = font.render(text, True, (150, 150, 150))
     tool_text_rect = tool_text.get_rect(center=coords)
     Screen.blit(tool_text, tool_text_rect)
