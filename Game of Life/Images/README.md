@@ -1,2 +1,0 @@
-
-sprites used in gol
