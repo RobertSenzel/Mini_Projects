@@ -1,5 +1,4 @@
 import sys
-import time
 import numpy as np
 import pygame as pg
 from scipy.signal import convolve2d
