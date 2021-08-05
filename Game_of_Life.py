@@ -147,6 +147,17 @@ def iteration():
     game_rules(width, height, 0, 0)
     return new_grid
 
+from numba import jit
+# faster code
+@jit('b1[:, :](b1[:, :])', nopython=True)
+def iteration1(p):
+    new_grid = np.zeros((width, height), dtype=b1)
+    for i in range(1, width-1):
+        for j in range(1, height-1):
+            n = p[i-1][j+1] + p[i][j+1] + p[i+1][j+1] + p[i-1][j] + p[i+1][j] + p[i-1][j-1] + p[i][j-1] + p[i+1][j-1]
+            new_grid[i][j] = (n == 3) | ((n == 2) & (p[i][j] == 1))
+    return new_grid
+
 
 def coordinate_change(mouse):
     """change coordinate of mouse depending on zoom"""
