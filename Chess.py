@@ -12,7 +12,7 @@ coor_font = pg.font.SysFont('Arial', size=15)
 result_font = pg.font.SysFont('Arial', size=30, bold=True)
 mode_font = pg.font.SysFont('Arial', size=24, bold=True)
 
-path = 'C:\\Users\\Robert\\Documents\\chess_pics\\'
+path = 'images\\'
 back_ground = pg.image.load(path + 'back-ground.png').convert()
 chess_board = pg.image.load(path + 'chess-board.png').convert()
 chess_board_rect = chess_board.get_rect(topleft=(44, 44))
