@@ -112,10 +112,9 @@ def zoom_draw():
     return w1, h1, corr0, corr1
 
 
-def iteration():
+def iteration(pixels):
     """updates cells every iteration using Conway's game of life rules.
        Divides the main grid into 16384 smaller grids, only updates grids with life in it"""
-    global pixels
 
     def grid_split(w, h, coor0, coor1):
         """splits a grid into 4"""
@@ -147,10 +146,11 @@ def iteration():
     game_rules(width, height, 0, 0)
     return new_grid
 
-from numba import jit
+
+from numba import jit, b1
 # faster code
 @jit('b1[:, :](b1[:, :])', nopython=True)
-def iteration1(p):
+def iteration_2(p):
     new_grid = np.zeros((width, height), dtype=b1)
     for i in range(1, width-1):
         for j in range(1, height-1):
@@ -223,7 +223,7 @@ if __name__ == '__main__':
         if not pause:   # iteration
             age += 1
             pre_pixels = pixels.copy()
-            pixels = iteration()
+            pixels = iteration(pixels)
         else:
             Screen.blit(Pause, (width+9, 173))
         if move_slider:     # fps slider
