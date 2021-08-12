@@ -5,7 +5,7 @@ import pygame as pg
 pg.init()
 w, h = 1300, 600
 Screen = pg.display.set_mode((w, h))
-pg.display.set_caption('Sierpinski Triangle')
+pg.display.set_caption('Sierpinski Gasket')
 points = []
 triangle = [np.array([int(w/2), 10]), np.array([int(w/4), h-10]), np.array([int(0.75*w), h-10])]
 
