@@ -19,7 +19,7 @@ A convolution AI that can predict hand drawn digits. Built using tensorflow 2.0.
 Conway's Game_of_life:
 One of the most famous cellular automata. You can add pre-defined patterns, see code for details.
 
-![Game_of_life](https://user-images.githubusercontent.com/86438156/128385851-0b6f5402-d2a4-40f2-8d39-daadd5391c1a.gif)
+![ezgif com-gif-maker (5)](https://user-images.githubusercontent.com/86438156/129381661-e1fefb08-688b-4f9e-b295-d47768159d02.gif)
 
 Chaos_game:
 Simulations of sierpinskies gasket and Barnsley's fern using numpy.random.
