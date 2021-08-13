@@ -22,7 +22,7 @@ One of the most famous cellular automata. You can add pre-defined patterns, see 
 ![ezgif com-gif-maker (5)](https://user-images.githubusercontent.com/86438156/129381661-e1fefb08-688b-4f9e-b295-d47768159d02.gif)
 
 Chaos_game:
-Simulations of sierpinskies gasket and Barnsley's fern using numpy.random.
+Simulations of the Sierpinski gasket and Barnsley's fern using numpy.random.
 
 ![ezgif com-gif-maker (4)](https://user-images.githubusercontent.com/86438156/129253980-7197fc27-69e9-4562-8e00-33ddcaed7f5a.gif)
 
