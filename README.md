@@ -1,5 +1,5 @@
 # Mini_Projects
-All visualisations are created using pygame.
+A collection of mini projects that I have made. All visualisations are created using pygame.
 
 ### Pendulums:
   
