@@ -88,12 +88,13 @@ def create(p, coor):
                             [0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
                             [0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
                             [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0]])}
-    pixels[int(coor[0]):int(coor[0] + len(pattern[p])), int(coor[1]):int(coor[1] + len(pattern[p][0]))] = pattern[p]
+    start_pattern = pattern.get(p, pattern['R_pentomino'])
+    pixels[int(coor[0]):int(coor[0] + len(start_pattern)), int(coor[1]):int(coor[1] + len(start_pattern[0]))] = start_pattern
 
 
 create('R_pentomino', [width/2, height/2])  # adds R pentomino to centre of grid
 
-
+# I should have really used a class 
 def zoom_draw():
     """functions draws live cells onto the grid, also rescales the grid when zooming in"""
     global zoom_pixels, zoom_pre_pixels, zoom_coord, zoom_data
