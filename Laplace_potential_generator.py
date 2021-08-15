@@ -145,6 +145,7 @@ class Controller:
         self.potential = np.zeros((300, 300))
         self.graph = self.draw_graph()
         self.input_potential_bool = np.zeros((300, 300))
+        self.input_potential_values = np.zeros((300, 300))
 
     def calculate_gradient(self):
         edge = np.linspace(0, 299, 300)
