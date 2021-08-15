@@ -8,7 +8,7 @@ https://user-images.githubusercontent.com/86438156/129493447-d50bffcd-373d-4e3a-
 
 ### Pendulums:
   
-A simulation of n rigid pendulums using sympy's physics library. The code also creates a tkinter window which allows you to choose the number of pendulums.
+A simulation of n rigid pendulums using sympy's physics library. The code creates a tkinter window which allows you to choose the number of pendulums.
 
 ![Pendulums](https://user-images.githubusercontent.com/86438156/128388500-87532753-c2c4-4fa7-8b94-86f745b01352.gif)
 
