@@ -13,7 +13,7 @@ A simulation of n rigid pendulums using sympy's physics library. The code create
 ![Pendulums](https://user-images.githubusercontent.com/86438156/128388500-87532753-c2c4-4fa7-8b94-86f745b01352.gif)
 
 ### Chess:
-A basic chess computer, (no AI yet). It's my first project so code is pretty trash.
+A basic chess computer.
 
 ![Chess](https://user-images.githubusercontent.com/86438156/128390505-ea566013-7f52-4de4-b110-66e0201a101d.gif)
 
